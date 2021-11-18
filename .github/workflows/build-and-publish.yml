@@ -11,12 +11,11 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v2
       
-    - name: release.sh
+    - name: build the PDF
       uses: dante-ev/latex-action@latest
       with:
         entrypoint: ./build.sh
-
-    - uses: actions/upload-artifact@v2
+    - name: Release
+    uses: softprops/action-gh-release@v1
     with:
-      name: upload
-      path: tstextbook.pdf
+      files: tstextbook.pdf
