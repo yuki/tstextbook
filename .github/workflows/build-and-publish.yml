@@ -15,7 +15,8 @@ jobs:
       uses: dante-ev/latex-action@latest
       with:
         entrypoint: ./build.sh
+
     - name: Release
-    uses: softprops/action-gh-release@v1
-    with:
-      files: tstextbook.pdf
+      uses: softprops/action-gh-release@v1
+      with:
+        files: tstextbook.pdf
