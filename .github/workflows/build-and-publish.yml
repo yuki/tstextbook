@@ -15,3 +15,8 @@ jobs:
       uses: dante-ev/latex-action@latest
       with:
         entrypoint: ./build.sh
+
+    - uses: actions/upload-artifact@v2
+    with:
+      name: upload
+      path: tstextbook.pdf
