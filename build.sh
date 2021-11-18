@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 BOOK=tstextbook
 
 pdflatex $(BOOK)
