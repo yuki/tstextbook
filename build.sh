@@ -1,3 +1,4 @@
+#!/bin/bash
 BOOK=tstextbook
 
 pdflatex $(BOOK)
