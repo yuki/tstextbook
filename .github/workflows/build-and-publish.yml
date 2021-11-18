@@ -14,5 +14,4 @@ jobs:
     - name: release.sh
       uses: dante-ev/latex-action@latest
       with:
-        compiler: pdflatex
         entrypoint: ./build.sh
