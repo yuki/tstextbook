@@ -1,8 +1,7 @@
 #!/bin/sh
-BOOK=tstextbook
 
-pdflatex $(BOOK)
-biber $(BOOK)
-makeindex $(BOOK)
-pdflatex $(BOOK)
-pdflatex $(BOOK)
+pdflatex tstextbook
+biber tstextbook
+makeindex tstextbook
+pdflatex tstextbook
+pdflatex tstextbook
